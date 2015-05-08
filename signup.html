@@ -34,11 +34,6 @@
               displayError("#password", "Password must have at least 1 capital letter");
               return false;
           }
-          
-          if (!/[!@&%_]/.test($("#password").val())){
-              displayError("#password", "Password must have at least 1 special character: !@&%_");
-              return false;
-          }
           $("#password").css("background-color", "white");
           $("#passwordError").css("background-color","white");
           $("#passwordError").html("");
@@ -55,13 +50,18 @@
 	  <div class = "centerLogin">
 	     <h1>Sign Up</h1>
 		
-		<form action="signupProcess.php" method="post">
+		<form action="signupProcess.php" method="post" enctype="multipart/form-data">
 			First Name: <input type="text"name="fName"> </br><br/>
 			Last Name: <input type="text" name="lName"></br><br/>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <input type ="text" name="email"> </br></br>
+             &nbsp; &nbsp;&nbsp;&nbsp;About you:
+            <textarea name="about" maxlength="200" cols="25" rows="5"></textarea><br/>
             Username: <input type="text" name="username"></br></br>
-            Password: <input type="text" name="password" id = "password"/><span id="passwordError"></span><br /></br>
-			<input type="submit" name="signupForm" class= "btn btn-success" value="Sign up" />
+            Password: <input type="password" name="password" id = "password"/><span id="passwordError"></span><br /></br>
+            Profile Picture: <input style="display: inline-block;"type="file" name="pictureName"/><br/><br/>
+            Resume: <input style="display: inline-block;"type="file" name="resumeName"/><br/><br/>
+			<a href="homepage.php"> Homepage</a><br/><br/>
+            <input type="submit" name="signupForm" class= "btn btn-success" value="Sign up" />
 			
 		</form>
         
@@ -75,6 +75,7 @@
 
     <script>
   	$("#password").change(checkPassword);
+    
     </script>
 
 	</body>

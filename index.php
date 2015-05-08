@@ -22,8 +22,8 @@
             <input type="submit" name="loginForm" class= "btn btn-success" value="Log in" />
 			
 		</form>
-        <a href = "signup.html">Don't have an account? Click here.</a><br/>
-        <a href="homepage.php"> Homepage.</a>
+        <a href = "signup.html">Don't have an account? Click here.</a>
+        
 		
 		<footer>
      <p>&copy; Copyright  by CSUMB 2015</p>

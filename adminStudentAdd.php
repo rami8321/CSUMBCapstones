@@ -56,7 +56,7 @@
         
         
       
-        header("Location: profiles.php");
+        header("Location: adminHome.php");
 		
 			
 			

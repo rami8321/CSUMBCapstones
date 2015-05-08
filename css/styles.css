@@ -1,4 +1,3 @@
-
 .centerLogin{
     text-align:center;
     width: 700px;
@@ -11,3 +10,35 @@
     text-align: center;
     
 }
+img{
+        border:#002a4e 3px;
+        float: left;
+        padding: 10px;
+        border-radius: 10px;
+}
+
+
+
+.profilePicture{
+    width: 300px;
+    text-align:center;
+    font-size: 250%;
+    float:right;
+    
+}
+
+.profilePicture img{
+    
+    width: 225px;
+    height: auto;
+}
+
+.homepage{
+    background-color:#2A3769;
+    color: white;
+}
+
+.a{
+    text-emphasis-color: #F9E867;
+}
+
